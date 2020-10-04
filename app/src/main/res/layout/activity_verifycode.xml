@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".verifycode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ccp_down_arrow"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/code"
+            android:textSize="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Description Text"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemCount="6" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#FFFF9100"
+            android:backgroundTint="#FF9100"
+            android:text="Verify Code"
+            android:textColor="@color/defaultContentColor" />
+
+
+    </LinearLayout>
+
+</ScrollView>
